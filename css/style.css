@@ -590,10 +590,9 @@ a {
 .portfolio-filter:hover {
 
     color: var(--text-primary);
-
+    background: var(--jasmin);
     border-color:
         rgba(154, 112, 73, .45);
-
     transform:
         translateY(-2px);
 }
@@ -1136,6 +1135,9 @@ a {
     transition:
         background .2s ease,
         transform .2s ease;
+
+    z-index: 100;
+    pointer-events: auto;
 }
 
 
@@ -1194,6 +1196,8 @@ a {
 
     transition:
         background .2s ease;
+
+    z-index: 101;
 }
 
 
@@ -1727,12 +1731,9 @@ a {
 
 .video-filter:hover {
 
-    color:
-        white;
-
-    border-color:
-        rgba(255, 255, 255, .3);
-
+    color: var(--jasmin-ink);    
+    background: var(--jasmin);
+    border-color: var(--jasmin);
     transform:
         translateY(-2px);
 }
@@ -1741,10 +1742,8 @@ a {
 
     color:
         var(--jasmin-ink);
-
     background:
         var(--jasmin);
-
     border-color:
         var(--jasmin);
 }
@@ -2364,4 +2363,30 @@ body.dark-theme .whats-contact {
 
 body.dark-theme .whats-contact svg {
     fill: #25D366 !important;
+}
+
+body.dark-theme .portfolio-filter:hover {
+    color: #121212 !important;
+    background: var(--jasmin) !important;
+    border-color: var(--jasmin) !important;
+    transform: translateY(-2px);
+}
+
+body.dark-theme .portfolio-filter.active {
+    color: #121212 !important;
+    background: var(--jasmin) !important;
+    border-color: var(--jasmin) !important;
+}
+
+body.dark-theme .video-filter:hover {
+    color: #121212 !important;
+    background: var(--jasmin) !important;
+    border-color: var(--jasmin) !important;
+    transform: translateY(-2px);
+}
+
+body.dark-theme .video-filter.active {
+    color: #121212 !important;
+    background: var(--jasmin) !important;
+    border-color: var(--jasmin) !important;
 }
