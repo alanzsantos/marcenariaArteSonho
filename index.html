@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <meta name="description" content="Marcenaria Arte & Sonho - Projetos personalizados de marcenaria.">
 
@@ -19,9 +19,9 @@
 <body>
 
     <header class=" nav" id="nav">
-
+    
     <div class="nav-inner">
-
+        
         <a href="#top" class="nav-logo">
             <img class="logomarca" src="profissionais/mas.png" alt="Marcenaria Arte & Sonho LTDA">
         </a>
@@ -56,6 +56,10 @@
 
         <div class="nav-actions">
 
+            <button id="theme-toggle" class="btn-theme" type="button" aria-label="Alternar tema" style="background: none; border: none; font-size: 1.4rem; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 8px; color: var(--text-primary); transition: transform 0.2s ease;">
+                🌙
+            </button>
+
             <a class="btn btn-ghost nav-cta" href="#secaoFormulario">
                 Solicite seu orçamento
             </a>
@@ -68,7 +72,7 @@
 
             </button>
 
-        </div>
+        </div>                
 
     </div>
 
@@ -90,8 +94,7 @@
                     </p>
 
                     <p class="story-text">
-                        Hoje, na <strong>Arte & Sonho</strong>, transformo essa sólida experiência industrial em um
-                        serviço exclusivo e sob medida. Elimino os intermediários para entregar ao cliente o que há de
+                        Hoje, na <strong>Arte & Sonho</strong>, transformo essa sólida experiência industrial em um serviço exclusivo e sob medida. Elimino os intermediários para entregar ao cliente o que há de
                         mais refinado: precisão milimétrica, acabamento impecável e móveis projetados para solucionar a
                         sua rotina com máxima sofisticação.
                     </p>
@@ -484,7 +487,7 @@
 
             <form id="formContato" class="form-estilizado" autocomplete="off">
                 <div class="form-grupo">
-                    <label for="nome">Seu Nome</label>
+                    <label for="nome">Seu Nome e Sobrenome</label>
                     <input type="text" id="nome" required placeholder="Ex: João Silva">
                 </div>
 
@@ -542,6 +545,7 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/theme.js"></script>
     <script src="js/videos.js"></script>
     </body>
 

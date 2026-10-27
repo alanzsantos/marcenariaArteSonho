@@ -69,13 +69,16 @@
 
 html {
     scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 
 body {
 
     min-height: 100vh;
-
+    max-width: 100%;
+    overflow-x: hidden;
     background-color: var(--bg);
 
     background-image:
@@ -90,7 +93,6 @@ body {
 
     line-height: 1.5;
 }
-
 
 body.viewer-open {
     overflow: hidden;
@@ -1974,7 +1976,8 @@ a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #121212;
     color: #ffffff;
-    padding: 120px 20px 80px 20px; 
+    padding: 60px 20px 80px 20px; 
+    margin-top: 20px;
 }
 
 .story-container {
@@ -2008,7 +2011,9 @@ a {
   line-height: 1.7;
   color: #cccccc;
   margin-bottom: 16px;
-  text-align: justify;
+  text-align: left;
+  word-break: normal;
+  overflow-wrap: break-word;
 }
 
 .story-text strong {
@@ -2046,7 +2051,7 @@ a {
 
 .counter-label {
   font-size: 0.95rem;
-  color: #d1d5db; 
+  
   margin: 0;
 }
 
@@ -2290,4 +2295,73 @@ a {
 
 .mapa-container iframe {
     display: block;
+}
+
+body.dark-theme {
+    --bg: #121212;
+    --text-primary: #ffffff;
+    --text-secondary: #a1a1a6;
+    background-color: #121212 !important;
+}
+
+body.dark-theme section,
+body.dark-theme main,
+body.dark-theme .portfolio-section,
+body.dark-theme .videos-section,
+body.dark-theme .story-section {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+}
+
+body.dark-theme .portfolio-card, 
+body.dark-theme .card,
+body.dark-theme .portfolio-filters button,
+body.dark-theme .video-filter {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+    border-color: #333333 !important;
+}
+
+body.dark-theme header.nav {
+    background-color: rgba(0, 0, 0, 0.85) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #222222;
+}
+
+body.dark-theme .nav-links a {
+    color: #ffffff !important;
+}
+
+.btn-theme:hover {
+    transform: scale(1.1);
+}
+
+body.dark-theme .site-footer,
+body.dark-theme footer,
+body.dark-theme .footer-bottom {
+    background-color: #000000 !important;
+    background-image: none !important;
+    color: #ffffff !important;
+    border-top: 1px solid #222222;
+}
+
+body.dark-theme .footer-title,
+body.dark-theme .footer-text,
+body.dark-theme .footer-cep,
+body.dark-theme .footer-copy,
+body.dark-theme .contact-name {
+    color: #ffffff !important;
+}
+
+body.dark-theme .font-italic {
+    color: #a1a1a6 !important;
+}
+
+body.dark-theme .whats-contact {
+    background-color: transparent !important;
+    color: #25D366 !important;
+}
+
+body.dark-theme .whats-contact svg {
+    fill: #25D366 !important;
 }

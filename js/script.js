@@ -850,7 +850,7 @@ function inicializarContadoresHistoria() {
 
                     setTimeout(() => {
                         yearElement.innerText = "6 Anos";
-                        descElement.innerHTML = "De história, evolução e solidez como marca própria";
+                        descElement.innerHTML = "De história, evolução e solidez no mercado de marcenaria.";
                         descElement.style.color = "#ffffff";
                         yearElement.style.opacity = 1;
                     }, 300);
@@ -928,7 +928,7 @@ function enviarMensagemWhatsapp(event) {
     const nome = document.getElementById('nome').value.trim();
     const mensagemUsuario = document.getElementById('mensagem').value.trim();
 
-    const textoFormatado = `Olá André, meu nome é *${nome}*.\n\n${mensagemUsuario}`;
+    const textoFormatado = `Olá André, meu nome é ${nome}.\n\n${mensagemUsuario}`;
 
     const urlBase = new URL(`https://wa.me/${numeroCompleto}`);
     urlBase.searchParams.append("text", textoFormatado);
@@ -945,3 +945,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const formulario = document.getElementById('formContato');
     formulario.addEventListener('submit', enviarMensagemWhatsapp);
 });
+
+function gerenciarTemaEscuro() {
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    if (!themeToggleBtn) return;
+
+    const savedTheme = localStorage.getItem('theme');
+    const prefereEscuro = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (savedTheme === 'dark' || (!savedTheme && prefereEscuro)) {
+        document.body.classList.add('dark-theme');
+    }
+    
+    function alternarTema() {
+        document.body.classList.toggle('dark-theme');
+        
+        if (document.body.classList.contains('dark-theme')) {
+            localStorage.setItem('theme', 'dark');
+        } else {
+            localStorage.setItem('theme', 'light');
+        }
+    }
+
+    themeToggleBtn.addEventListener('click', alternarTema);
+}
+
+gerenciarTemaEscuro();
