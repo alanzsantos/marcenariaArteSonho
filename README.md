@@ -2,6 +2,10 @@
 
 Uma solução web estática, moderna e de alta performance desenvolvida sob medida para a **Marcenaria Arte-Sonho**. Este projeto funciona como um portfólio digital estratégico, focado em duas frentes principais: **exibir com excelência os trabalhos já realizados** e **transformar visitantes em novos clientes**.
 
+<p align="center">
+  <img width="1500" height="688" <img width="1502" height="688" alt="Icons_Marts" src="https://github.com/user-attachments/assets/a8570303-6c46-4560-bd73-709f36862ea3" />
+</p>
+
 ## 🚀 Funcionalidades Estratégicas
 
 - **Exibição Dinâmica de Projetos:** Galeria de fotos e seção de vídeos automatizadas locais via Node.js, garantindo que novos trabalhos sejam integrados rapidamente ao front-end sem codificação manual repetitiva.
