@@ -117,23 +117,17 @@ a {
 .nav {
 
     position: fixed;
-
     top: 0;
     left: 0;
     right: 0;
-
     z-index: 1000;
-
     background:
         rgba(243, 239, 232, .88);
-
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
-
     border-bottom:
         1px solid var(--border);
 }
-
 
 .nav-inner {
 
@@ -2050,7 +2044,6 @@ a {
 
 .counter-label {
   font-size: 0.95rem;
-  
   margin: 0;
 }
 
@@ -2338,7 +2331,7 @@ body.dark-theme .nav-links a {
 body.dark-theme .site-footer,
 body.dark-theme footer,
 body.dark-theme .footer-bottom {
-    background-color: #000000 !important;
+    background-color: #121212 !important;
     background-image: none !important;
     color: #ffffff !important;
     border-top: 1px solid #222222;
